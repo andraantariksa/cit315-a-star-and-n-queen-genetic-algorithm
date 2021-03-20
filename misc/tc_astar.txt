@@ -1,0 +1,17 @@
+5
+Depok 5 100
+Senayan 25 75
+Cikarang 55 100
+Jakarta 40 152
+Bekasi 60 159
+10
+Depok Senayan 200
+Senayan Depok 200
+Senayan Cikarang 700
+Cikarang Senayan 700
+Senayan Jakarta 1300
+Jakarta Senayan 1300
+Cikarang Jakarta 450
+Jakarta Cikarang 450
+Jakarta Bekasi 100
+Bekasi Jakarta 100
