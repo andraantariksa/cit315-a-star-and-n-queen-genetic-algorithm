@@ -6,6 +6,7 @@
 #include <functional>
 #include <Coord2D.hpp>
 #include <Graph.hpp>
+#include <optional>
 
 class Graph;
 
@@ -17,8 +18,10 @@ public:
 	{
 	}
 
+    virtual std::optional<std::vector<std::string>> resolve(std::string startNode,
+std::string endNode,
+Graph& graph) = 0;
 protected:
 	std::function<float(Coord2D, Coord2D)> heuristic;
 
-	virtual std::vector<std::string> resolve(Graph& graph) = 0;
 };

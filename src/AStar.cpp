@@ -39,6 +39,8 @@ void AStar(const std::function<float(Coord2D, Coord2D)>& distanceFunction)
         }
     }
 
+    std::cin >> nodeNameFrom >> nodeNameTo;
+
     AStarShortestPathAlgorithm algorithm(distanceFunction);
     graph.shortestPath(nodeNameFrom, nodeNameTo, algorithm);
 }

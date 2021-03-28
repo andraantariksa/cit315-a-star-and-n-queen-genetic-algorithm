@@ -14,7 +14,7 @@ private:
 	std::unordered_map<std::string, std::vector<Edge>> edges;
 public:
 	void addNode(const std::string& name, Coord2D coord);
-	void addEdge(const std::string& nodeFromName, const std::string& nodeToName, int cost, bool twoWays);
+	void addEdge(const std::string& nodeFromName, const std::string& nodeToName, int cost, bool twoWays = true);
 	void shortestPath(const std::string& nodeFromName, const std::string& nodeToName, ShortestPathAlgorithm& algorithm);
 
 	const std::unordered_map<std::string, Coord2D>& getNodes() { return nodes; }
