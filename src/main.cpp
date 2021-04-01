@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 {
 	if (argc > 1)
 	{
-		if (strcmp(argv[1], "a*") == 0)
+		if (strcmp(argv[1], "astar") == 0)
 		{
             int distanceChoice = std::stoi(argv[2]);
             std::function<float(Coord2D, Coord2D)> f;

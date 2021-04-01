@@ -5,7 +5,7 @@
 ### A*
 
 ```
-./AStarAndNQueenGeneticAlgorithm a* HEURISTIC_ALGORITHM
+./AStarAndNQueenGeneticAlgorithm astar HEURISTIC_ALGORITHM
 ```
 
 Replace `HEURISTIC_ALGORITHM` with the following options:
