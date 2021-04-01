@@ -1,0 +1,19 @@
+8
+Oxford 92 52
+Manchester 77 53
+London 42 46
+Bristol 40 35
+Liverpool 56 23
+Cambridge 72 35
+Durham 83 41
+Newcastle 95 33
+8
+Newcastle Cambridge 110
+Durham Newcastle 240
+Durham Cambridge 120
+Liverpool Cambridge 200
+Bristol Liverpool 200
+London Bristol 800
+London Manchester 300
+Oxford Manchester 350
+Oxford Bristol

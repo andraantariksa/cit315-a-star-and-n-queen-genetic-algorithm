@@ -1,0 +1,22 @@
+8
+Los-Angeles 40 100
+New-York 87 81
+Chicago 120 110
+Seattle 135 80
+Philadelphia 125 62
+Boston 98 42
+Washington 66 50
+Detroit 145 30
+11
+Boston Detroit 400
+Washington Boston 200
+Los-Angeles New-York 250
+New-York Chicago 400
+Chicago Seattle 210
+Detroit Seattle 700
+Philadelphia Seattle 620
+Philadelphia Chicago 615
+Boston Philadelphia 110
+New-York Boston 600
+Los-Angeles Washington 560
+Detroit Los-Angeles

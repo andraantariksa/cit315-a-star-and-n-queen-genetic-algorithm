@@ -1,7 +1,7 @@
 #include <string>
-
-#include <ShortestPathAlgorithm.hpp>
-#include <Graph.hpp>
+#include <iostream>
+#include <AStar/ShortestPathAlgorithm.hpp>
+#include <AStar/Graph.hpp>
 #include <Coord2D.hpp>
 
 void Graph::addNode(const std::string& name, Coord2D coord)
@@ -10,7 +10,7 @@ void Graph::addNode(const std::string& name, Coord2D coord)
     edges.insert({ name, std::vector<Edge>(0) });
 }
 
-void Graph::addEdge(const std::string& nodeFromName, const std::string& nodeToName, int cost, bool twoWays)
+void Graph::addEdge(const std::string& nodeFromName, const std::string& nodeToName, float cost, bool twoWays)
 {
     edges
         .at(nodeFromName)
@@ -18,6 +18,8 @@ void Graph::addEdge(const std::string& nodeFromName, const std::string& nodeToNa
             .nodeToName = nodeToName,
             .cost = cost
         });
+
+    // Bidirectional
     if (twoWays)
     {
         edges
@@ -29,9 +31,10 @@ void Graph::addEdge(const std::string& nodeFromName, const std::string& nodeToNa
     }
 }
 
-void Graph::shortestPath(const std::string& nodeFromName,
+std::optional<std::pair<std::vector<std::string>, float>> Graph::shortestPath(
+    const std::string& nodeFromName,
     const std::string& nodeToName,
     ShortestPathAlgorithm& algorithm)
 {
-    algorithm.resolve(nodeFromName, nodeToName, *this);
+    return algorithm.resolve(nodeFromName, nodeToName, *this);
 }

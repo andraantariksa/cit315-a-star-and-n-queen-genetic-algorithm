@@ -1,0 +1,22 @@
+8
+Dusseldorf 20 85
+Essen 45 130
+Cologne 60 50
+Hannover 130 175
+Dortmund 75 150
+Berlin 180 150
+Leipzig 170 120
+Frankfurt 140 10
+11
+Essen Dortmund 200
+Essen Dusseldorf 170
+Leipzig Frankfurt 380
+Cologne Frankfurt 290
+Dortmund Dusseldorf 250
+Leipzig Cologne 310
+Cologne Dusseldorf 210
+Dortmund Hannover 300
+Hannover Berlin 400
+Leipzig Berlin 320
+Leipzig Dortmund 350
+Berlin Dusseldorf

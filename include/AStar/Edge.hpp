@@ -2,8 +2,9 @@
 
 #include <string>
 
+// One direction edge
 struct Edge
 {
 	std::string nodeToName;
-    int cost;
+    float cost;
 };
