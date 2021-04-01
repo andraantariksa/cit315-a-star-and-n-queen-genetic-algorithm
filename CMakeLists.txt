@@ -15,7 +15,8 @@ set(A_STAR_AND_NQUEEN_GENETIC_HEADERS
 	"include/NQueen/Queen.hpp"
 
 	"include/Utils.hpp"
-	"include/Coord2D.hpp")
+	"include/Coord2D.hpp"
+	"include/NQueen/Chromosome.h" include/NQueen/Population.h)
 	
 set(A_STAR_AND_NQUEEN_GENETIC_SOURCES
 	"src/AStar.cpp"
@@ -26,7 +27,8 @@ set(A_STAR_AND_NQUEEN_GENETIC_SOURCES
 	"src/NQueen/Queen.cpp"
 
 	"src/main.cpp"
-	"src/Utils.cpp")
+	"src/Utils.cpp"
+	"src/NQueen/Chromosome.cpp" src/NQueen/Population.cpp)
 
 add_executable("AStarAndNQueenGeneticAlgorithm"
 	${A_STAR_AND_NQUEEN_GENETIC_HEADERS}
