@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD 17)
 cmake_minimum_required(VERSION 3.19)
 project(${PROJECT_NAME})
 
-set(A_STAR_HEADERS
+set(A_STAR_AND_NQUEEN_GENETIC_HEADERS
 	"include/AStar.hpp"
 	"include/AStar/Edge.hpp"
 	"include/AStar/Graph.hpp"
@@ -17,7 +17,7 @@ set(A_STAR_HEADERS
 	"include/Utils.hpp"
 	"include/Coord2D.hpp")
 	
-set(A_STAR_SOURCES
+set(A_STAR_AND_NQUEEN_GENETIC_SOURCES
 	"src/AStar.cpp"
 	"src/AStar/Graph.cpp"
 	"src/AStar/AStarShortestPathAlgorithm.cpp"
@@ -28,10 +28,10 @@ set(A_STAR_SOURCES
 	"src/main.cpp"
 	"src/Utils.cpp")
 
-add_executable("AStar"
-	${A_STAR_HEADERS}
-	${A_STAR_SOURCES})
+add_executable("AStarAndNQueenGeneticAlgorithm"
+	${A_STAR_AND_NQUEEN_GENETIC_HEADERS}
+	${A_STAR_AND_NQUEEN_GENETIC_SOURCES})
 
-target_include_directories("AStar"
+target_include_directories("AStarAndNQueenGeneticAlgorithm"
 	PUBLIC
 	"include/")

@@ -29,7 +29,7 @@ int main(int argc, char** argv)
             }
             a_star(f);
 		}
-		else if (strcmp(argv[1], "genetic") == 0)
+		else if (strcmp(argv[1], "nqueen") == 0)
 		{
             int n = std::stoi(argv[2]);
             n_queen(n);

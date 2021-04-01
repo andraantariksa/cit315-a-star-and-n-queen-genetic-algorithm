@@ -1,3 +1,3 @@
 #pragma once
 
-void n_queen(unsigned int n);
+void n_queen(unsigned int queen_total);
