@@ -12,11 +12,9 @@ set(A_STAR_AND_NQUEEN_GENETIC_HEADERS
 	"include/AStar/ShortestPathAlgorithm.hpp"
 
 	"include/NQueen.hpp"
-	"include/NQueen/Queen.hpp"
 
 	"include/Utils.hpp"
-	"include/Coord2D.hpp"
-	"include/NQueen/Chromosome.h" include/NQueen/Population.h)
+	"include/Coord2D.hpp")
 	
 set(A_STAR_AND_NQUEEN_GENETIC_SOURCES
 	"src/AStar.cpp"
@@ -24,11 +22,9 @@ set(A_STAR_AND_NQUEEN_GENETIC_SOURCES
 	"src/AStar/AStarShortestPathAlgorithm.cpp"
 
 	"src/NQueen.cpp"
-	"src/NQueen/Queen.cpp"
 
 	"src/main.cpp"
-	"src/Utils.cpp"
-	"src/NQueen/Chromosome.cpp" src/NQueen/Population.cpp)
+	"src/Utils.cpp")
 
 add_executable("AStarAndNQueenGeneticAlgorithm"
 	${A_STAR_AND_NQUEEN_GENETIC_HEADERS}
